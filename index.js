@@ -30,7 +30,13 @@ http.createServer(function(req,res){
 		res.writeHead(401,{
 			'WWW-Authenticate': 'Basic realm="NodeJS Proxy Server"'
 		});
-		res.write(fs.readFileSync(config.files.failedAuth,'utf-8'));
-		res.end();
+		fs.readFile(config.files.failedAuth,{'encoding':'utf-8'},function(err,data){
+			if(err){
+				res.end();
+			}else{
+				res.write(data);
+				res.end();
+			}
+		});
 	}
 }).listen(config.port,config.ip);
