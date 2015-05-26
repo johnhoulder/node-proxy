@@ -1,0 +1,19 @@
+{
+  "name": "node-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/johnhoulder/node-proxy.git"
+  },
+  "author": "",
+  "license": "GPLv3",
+  "bugs": {
+    "url": "https://github.com/johnhoulder/node-proxy/issues"
+  },
+  "homepage": "https://github.com/johnhoulder/node-proxy"
+}
